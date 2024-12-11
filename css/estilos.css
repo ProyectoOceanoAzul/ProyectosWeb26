@@ -1,0 +1,3233 @@
+
+/*Google Fons       recomendable realizar la importacion del mismo archivo .css */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+
+/*bootstrap Iconos*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+
+/*Para resetear*/
+*{
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+/*
+    outline: 1px solid red;
+*/
+
+
+    -webkit-box-sizing: border-box;
+
+}
+
+
+
+html,
+body{
+
+
+    /*Estilo 1 de parrafo*/
+font-family: "Roboto", serif;
+
+    background-color: var(--colorEstilo19);
+
+    /*desplazamieento suave cuando se usa navevacion por ancla*/
+    scroll-behavior: smooth;
+
+}
+
+
+/*Estilos generales*/
+:root{
+
+    --colorEstilo1:#000000;
+    --colorEstilo2:#020004;
+    --colorEstilo3:#1c1c1d;
+    --colorEstilo4:#212529;
+    --colorEstilo5:#222222;
+
+    --colorEstilo6:#2e2e2e;
+    --colorEstilo7:#333333;
+    --colorEstilo8:#3c3c3c;
+    --colorEstilo9:#403b3b;
+    --colorEstilo10:#5d5d5d;
+    --colorEstilo11:#4D4D4D;
+    --colorEstilo12:#888888;
+
+    --colorEstilo13:#ababab;
+    --colorEstilo14:#cccccc;
+    --colorEstilo15:#d1cebd;
+    
+    --colorEstilo16:#eeeeee;
+    --colorEstilo17:#efefef;
+    --colorEstilo18:#F9F9F9;
+    --colorEstilo19:#ffffff;
+
+    --colorEstilo20:#0d1326;
+    --colorEstilo21:#e6ebff;
+    --colorEstilo22:#f57b51;
+    --colorEstilo23: #d63447;
+
+    --colorEstilo24: #F8F9FA;
+
+}
+
+
+/*Estilos genraels*/
+h1{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--colorEstilo22);
+
+    text-transform: capitalize;
+}
+
+h2{
+    font-size: 4.5rem;    
+}
+
+h3{
+    font-size: 2rem;
+}
+
+h4{
+    font-size: 1.1rem;
+}
+
+h5{
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+}
+
+
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+a:hover{
+    font-weight: 400;
+    transition: all 0.3s ease-in;
+    
+}
+
+div.fila__botones a.btn{
+    padding: 18px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    margin-top: 30px;
+
+}
+
+div.fila__botones a.btn--light{
+    background-color: hsla(0, 0%, 80%, 0.15);
+    color: var(--colorEstilo18);
+}
+
+div.fila__botones a.btn--light:hover{
+    background-color: hsla(0, 0%, 80%, 0.3);
+    transition: all 0.3s ease-in;
+}
+
+
+div.fila__botones a.btn--red{
+    background-color: var(--colorEstilo23);
+    color: var(--colorEstilo18);
+}
+
+div.fila__botones a.btn--red:hover{
+    background-color: #b21e33;
+    transition: all 0.3s ease-in;
+}
+
+
+
+div.fila__botones a.btn--orange{
+background-color: var(--colorEstilo22);
+    color: var(--colorEstilo18);
+}
+
+div.fila__botones a.btn--orange:hover{
+    background-color: #e23214;
+    transition: all 0.3s ease-in;
+}
+
+
+
+
+p{
+    font-size: 0.9rem;
+    line-height: 1.7rem;
+    margin: 10px 0;
+    color: var(--colorEstilo12);
+    font-weight: 300;    
+}
+
+
+
+/*contenedor*/
+div.contenedor{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 10px;
+
+
+    overflow: auto; /********************************/
+}
+
+
+/*menu principal*/
+header.contenedor__header{
+    padding: 20px 0;
+}
+
+header.contenedor__header nav.contenedor__superior div.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*menu logo y titulo prinicipal*/
+nav.contenedor__superior div.contenedor div.superior__logo{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+nav.contenedor__superior div.contenedor div.superior__logo img{
+    width: 40px;
+}
+
+
+nav.contenedor__superior div.contenedor div.superior__logo h1{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+
+/*menus y sbubmenu*/
+div.superior__menu ul.menu__opciones{
+    list-style-type: none;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+div.superior__menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+div.superior__menu ul.menu__opciones li a{
+    color: var(--colorEstilo12);
+}
+
+div.superior__menu ul.menu__opciones li a:hover{
+    color: var(--colorEstilo1);
+}
+
+
+/*contenedor__homes1banner*/
+section.contenedor__homes1banner{
+    height: 80vh;
+    padding-top: 250px;
+    background-image: url("../imagenes/showcase11.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-color: var(--colorEstilo11);*/
+    text-align: center;
+    
+}
+
+
+div.contenedor div.homes1banner h2{
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--colorEstilo18);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+/*contenedor__homes2about*/
+section.contenedor__homes2about{
+    padding: 120px 0;
+}
+
+section.contenedor__homes2about div.contenedor{
+    display: flex;
+    flex-direction: row;
+}
+
+div.homes2about__lado1{
+    flex: 50%;
+}
+
+div.homes2about__lado2{
+    flex: 50%;
+}
+
+div.homes2about__lado2 img{
+    width: 100%;
+    padding: 10px 0 10px 10px;
+    filter: brightness(80%);    
+}
+
+div.homes2about__lado2 img:hover{
+    filter: brightness(100%);
+    transition: all 0.3s ease-in;
+}
+
+
+div.homes2about__lado1 h4{
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+div.homes2about__lado1 div.grupo1{
+    padding: 50px 0;
+}
+
+
+
+/*contenedor__homes3services*/
+section.contenedor__homes3services{
+    padding: 120px 0;
+    background-color: var(--colorEstilo17);
+}
+
+section.contenedor__homes3services div.contenedor h5{
+    text-align: center;
+}
+
+section.contenedor__homes3services div.contenedor h3{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+div.homes3services__grupo{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+
+div.homes3services__grupo div.homes3services__lado1{
+    flex: 50%;
+}
+
+
+div.homes3services__grupo div.homes3services__lado2{
+    flex: 50%;
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+div.card div.card__cabecera figure{
+    position: relative;
+    overflow: hidden;
+    text-align: center;    
+}
+
+div.card div.card__cabecera figure img{
+    width: 100%;
+    filter: brightness(40%);
+
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+div.card div.card__cabecera figure img:hover{
+    filter: brightness(55%);
+    transition: all 0.3s ease-in;
+}
+
+div.card div.card__cabecera figure figcaption{
+    position: absolute;
+    top: inherit;
+    bottom: 5%;
+    left: 0;
+    width: 100%;
+    color: var(--colorEstilo17);
+    
+    text-align: left;
+    padding-left: 20px;
+}
+
+div.card div.card__cabecera figure figcaption div h4.figcaption{
+    font-weight: 300;
+    line-height: 28px;
+}
+
+div h4.figcaption span{
+    font-weight: 700;
+}
+
+
+div.card__cuerpo {
+    padding: 20px;
+    background-color: var(--colorEstilo19);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+div.card__cuerpo ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-left: 20px;
+    margin: 15px 0;
+    list-style-type: square;
+}
+
+div.card__cuerpo ul li{
+    font-size: 0.9rem;
+
+    color: var(--colorEstilo11);
+}
+
+/****************************************/
+
+div.imagenservice figure{
+    position: relative;
+    overflow: hidden;
+    text-align: center;    
+}
+
+
+div.imagenservice figure img{
+    width: 100%;
+    filter: brightness(40%);
+
+    border-radius: 20px;
+}
+
+
+div.imagenservice  figure img:hover{
+    filter: brightness(55%);
+    transition: all 0.3s ease-in;
+}
+
+
+div.imagenservice figure figcaption{
+    position: absolute;
+    top: inherit;
+    bottom: 5%;
+    left: 0;
+    width: 100%;
+    color: var(--colorEstilo17);
+    
+    text-align: left;
+    padding-left: 20px;
+}
+
+
+
+div.imagenservice figure figcaption div h4.figcaption{
+    font-weight: 300;
+    line-height: 28px;
+}
+
+div.imagenservice figure figcaption div h4.figcaption span{
+    font-weight: 700;
+}
+
+
+
+/*contenedor__homes4reservation*/
+section.contenedor__homes4reservation{
+    padding: 120px 0;
+}
+
+div.homes4reservation__grupo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;  
+    align-items: center;  
+}
+
+div.homes4reservation__lado2 div a.btn{
+    margin-top: 0;
+}
+
+
+
+/*contenedor__homes5why*/
+section.contenedor__homes5why{
+    padding: 120px 0;
+}
+
+section.contenedor__homes5why div.contenedor h3{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+section.contenedor__homes5why div.contenedor p{
+    text-align: center;
+    color: var(--colorEstilo11);
+    margin-bottom: 40px;
+}
+
+div.homes5why__fila{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    text-align: center; 
+}
+
+div.homes5why__fila div.homes5why img{
+    margin-bottom: 10px;
+    width: 50px;
+}
+
+div.homes5why__fila div.homes5why p{
+    color: var(--colorEstilo12);
+}
+
+
+/*contenedor__homes6testimonial*/
+section.contenedor__homes6testimonial{
+    padding: 120px 0;
+    background-color: var(--colorEstilo17);
+}
+
+section.contenedor__homes6testimonial div.contenedor h3{
+    text-align: center;
+}
+
+section.contenedor__homes6testimonial div.contenedor p{
+    text-align: center;
+    color: var(--colorEstilo11);
+
+    margin-bottom: 40px;
+}
+
+div.testimonial__fila{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    text-align: center;    
+}
+
+div.testimonial__fila div.testimonial{
+    padding: 3rem;
+}
+
+div.testimonial__fila div.testimonial img{
+    border-radius: 50%;
+}
+
+div.testimonial__detalle{
+    background-color: var(--colorEstilo18);
+    border-radius: 10px;
+}
+
+div.testimonial__detalle h4{
+    margin: 10px 0;
+}
+
+div.testimonial__detalle h5{
+    color: red;
+    font-weight: 500;    
+}
+
+div.testimonial__fila div.testimonial div.testimonial__detalle p{
+    color: var(--colorEstilo12);    
+}
+
+/*contenedor__homes7contact*/
+section.contenedor__homes7contact{
+    padding: 120px 0;
+
+    background-image: url("../imagenes/room11.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;    
+}
+
+section.contenedor__homes7contact div.contenedor h3{
+    margin-bottom: 20px;
+    color: var(--colorEstilo18);
+    text-align: left;
+    
+}
+
+section.contenedor__homes7contact div.contenedor
+div.fila__botones{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: flex-start;
+}
+
+
+/*contenedor__homes8partner*/
+section.contenedor__homes8partner{
+    padding: 70px 0;
+}
+
+section.contenedor__homes8partner div.contenedor div.partner__fila{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+div.partner__fila div.partner img{
+    width: 100px;
+} 
+
+
+/*******************************/
+/************ banner ************/
+/*******************************/
+section.contenedor__banner {
+    padding: 15px 0;
+    background-color: var(--colorEstilo24);
+    margin-top: -17px;    
+}
+
+section.contenedor__banner div.contenedor ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+ ul li a span.span1{
+    color: var(--colorEstilo22);
+    font-weight: 600;
+        
+    text-transform: capitalize
+ }
+
+ ul li span.span2{
+    color: var(--colorEstilo12);
+    font-weight: 300;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+ }
+
+
+
+/*******************************/
+/************ about ************/
+/*******************************/
+section.contenedor__abouts1about{
+    padding: 120px 0;
+}
+
+section.contenedor__abouts1about div.contenedor{
+    display: flex;
+    flex-direction: row;
+}
+
+section.contenedor__abouts1about div.contenedor div.abouts1about__lado1{ 
+    flex: 50%;
+}
+
+section.contenedor__abouts1about div.contenedor div.abouts1about__lado2{ 
+    flex: 50%;
+}
+
+div.abouts1about__lado1 img{
+    width: 100%;
+    padding: 10px 10px 10px 0;
+    filter: brightness(80%);
+}
+
+div.abouts1about__lado1 img:hover{
+    filter: brightness(100%);
+    transition: all 0.3s ease-in;
+}
+
+div.abouts1about__lado2 div.grupo1{
+    padding: 50px 0 50px 10px;
+}
+
+
+div.abouts1about__lado2 div.grupo1 div.experience ul{        
+    padding-left: 20px;
+}
+
+div.abouts1about__lado2 div.grupo1 div.experience ul li{
+    font-size: 0.89rem;
+    color: var(--colorEstilo11);
+    margin-bottom: 10px;
+}
+
+
+/*contenedor__abouts2doing*/
+section.contenedor__abouts2doing{
+    padding: 120px 0;    
+    background-color: var(--colorEstilo17);    
+}
+
+section.contenedor__abouts2doing div.contenedor h5{
+    text-align: center;    
+}
+
+section.contenedor__abouts2doing div.contenedor h3{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+div.cardabout__fila {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;        
+}
+
+div.cardabout__fila div.cardabout {
+
+    flex: 0 0 32%;
+    max-width: 32%;
+    padding: 30px;
+    background-color: var(--colorEstilo19);
+    border-radius: 10px;
+
+}
+
+div.cardabout__fila div.cardabout img{
+    width: 50px;
+    margin-bottom: 10px;
+    
+}
+
+
+div.cardabout__fila div.cardabout p{
+    text-align: left;
+}
+
+/*contenedor__abouts3team*/
+section.contenedor__abouts3team{
+    padding: 120px 0;
+}
+
+section.contenedor__abouts3team h5{
+    text-align: center;
+}
+
+section.contenedor__abouts3team h3{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+div.cardteam__fila {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+div.cardteam__fila div.cardteam img.team {
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+
+
+}
+
+div.cardteam__fila div.cardteam img:hover{
+
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+
+    transition: all 0.3s ease-in;
+}
+
+
+div.cardteam__fila div.cardteam h4{
+    text-align: center;
+}
+
+
+div.cardteam__fila div.cardteam p{
+    text-align: center;
+}
+
+
+
+
+div.cardteam__fila div.cardteam div.redsocial{    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;    
+}
+
+div.cardteam__fila div.cardteam div.redsocial a img{
+    border-radius: 50px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    width: 38px;
+
+}
+
+div.cardteam__fila div.cardteam div.redsocial a img:hover{
+    background-color: var(--colorEstilo17);
+    transition: all 0.3s ease-in;
+}
+
+
+/*contenedor__abouts4statistics*/
+section.contenedor__abouts4statistics{
+    padding: 120px 0;
+    background-color: var(--colorEstilo24);
+}
+
+section.contenedor__abouts4statistics div.contenedor{
+    display: flex;
+    flex-direction: row;
+}
+
+section.contenedor__abouts4statistics div.contenedor div.abouts4statistics__lado1{
+    flex: 50%;
+    padding-right: 10px;
+}
+
+section.contenedor__abouts4statistics div.contenedor div.abouts4statistics__lado2{
+    flex: 50%;
+    padding-left: 10px;
+}
+
+div.abouts4statistics__lado1 div.abouts4statistics__grupo{
+    padding: 50px 0;
+}
+
+div.abouts4statistics__lado1 div.abouts4statistics__grupo h3{
+    text-align: left;
+}
+div.abouts4statistics__lado1 div.abouts4statistics__grupo p{
+    text-align: left;
+}
+
+
+div.abouts4statistics__lado2 div.cardstatistics__fila{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    padding: 20px 0;
+}
+
+div.cardstatistics__fila div.cardstatistics{
+    flex: 40%;
+    padding: 20px 40px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--colorEstilo19);
+}
+
+div.cardstatistics__fila div.cardstatistics:hover{
+    box-shadow: 6px 10px 20px 0px rgba(189,189,189,0.61);
+    -webkit-box-shadow: 6px 10px 20px 0px rgba(189,189,189,0.61);
+    -moz-box-shadow: 6px 10px 20px 0px rgba(189,189,189,0.61);
+    transition: all 0.3s ease-in;
+}
+
+
+div.cardstatistics__fila div.cardstatistics img{
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+div.cardstatistics__fila div.cardstatistics P{
+    text-align: center;
+}
+
+
+
+
+
+
+/*contenedor__abouts5testimonial*/
+section.contenedor__abouts5testimonial{
+    padding: 120px 0;
+    background-color: var(--colorEstilo17);
+}
+
+section.contenedor__abouts5testimonial div.contenedor h3{
+    text-align: center;
+}
+
+section.contenedor__abouts5testimonial div.contenedor p{
+    text-align: center;
+    color: var(--colorEstilo11);
+
+    margin-bottom: 40px;
+}
+
+
+
+/*contenedor__homes7contact*/
+section.contenedor__abouts6reservation{
+    padding: 120px 0;
+
+    background-image: url("../imagenes/room11.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+
+    
+}
+
+section.contenedor__abouts6reservation div.contenedor h3{
+    margin-bottom: 20px;
+    color: var(--colorEstilo18);
+    text-align: left;
+    
+}
+
+section.contenedor__abouts6reservation div.contenedor
+div.fila__botones{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: flex-start;
+}
+
+
+
+/*******************************/
+/************ services ************/
+/*******************************/
+section.contenedor__servicess1services{
+    padding: 120px 0;
+}
+
+
+section.contenedor__servicess1services div.contenedor h5{
+    text-align: center;    
+}
+
+section.contenedor__servicess1services div.contenedor h3{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+div.cardservices__fila {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+}
+
+
+div.cardservices__fila div.cardservices{
+    flex: 30%;
+    padding: 20px;    
+}
+
+
+div.cardservices__fila div.cardservices:hover{
+    background-color: var(--colorEstilo24);
+    
+    transition: all 0.3s ease-in;
+}
+
+div.cardservices__fila div.ref{
+    background-color: var(--colorEstilo24);
+}
+
+
+div.cardservices__fila div.cardservices img{
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+div.cardservices__fila div.cardservices h4, p{
+    text-align: left;
+}
+
+div.cardservices__fila div.cardservices h5{
+    text-align: left;
+}
+
+
+
+/*contenedor__servicess2facilities*/
+section.contenedor__servicess2facilities{
+    padding: 120px 0;
+    background-color: var(--colorEstilo24);
+}
+
+section.contenedor__servicess2facilities div.contenedor{
+    display: flex;
+    flex-direction: row;
+}
+
+section.contenedor__servicess2facilities div.contenedor div.servicess2facilities__lado1{
+    flex: 50%;
+    padding-right: 10px;
+}
+
+section.contenedor__servicess2facilities div.contenedor div.servicess2facilities__lado2{
+    flex: 50%;
+    padding-left: 10px;
+}
+
+
+div.servicess2facilities__lado1 div.servicess2facilities__grupo{
+    padding: 50px 0;
+}
+
+div.servicess2facilities__lado1 div.servicess2facilities__grupo h5{
+    text-align: left;
+}
+div.servicess2facilities__lado1 div.servicess2facilities__grupo h3{
+    text-align: left;
+}
+
+
+div.servicess2facilities__lado1 div.servicess2facilities__grupo img{
+    width: 90%;
+    border-radius: 10px;
+    filter: brightness(80%);
+}
+
+div.servicess2facilities__lado1 div.servicess2facilities__grupo img:hover{
+    filter: brightness(100%);
+    transition: all 0.3s ease-in;
+}
+
+
+div.servicess2facilities__lado2 div.cardfacilities__fila{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    padding: 80px 0;
+}
+
+div.cardfacilities__fila div.cardfacilities{
+    flex: 40%;
+    padding: 20px 40px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--colorEstilo19);
+}
+
+div.cardfacilities__fila div.cardfacilities:hover{
+    box-shadow: 6px 10px 20px 0px rgba(189,189,189,0.61);
+    -webkit-box-shadow: 6px 10px 20px 0px rgba(189,189,189,0.61);
+    -moz-box-shadow: 6px 10px 20px 0px rgba(189,189,189,0.61);
+    transition: all 0.3s ease-in;
+}
+
+
+div.cardfacilities__fila div.cardfacilities img{
+    width: 50px;
+    margin-bottom: 10px;    
+}
+
+div.cardfacilities__fila div.cardfacilities P{
+    text-align: center;
+}
+
+
+
+/*contenedor__servicess3portafolio*/
+section.contenedor__servicess3portafolio{
+    padding: 120px 0;
+}
+
+section.contenedor__servicess3portafolio div.contenedor h5{
+    text-align: center;
+}
+
+section.contenedor__servicess3portafolio div.contenedor h3{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+div.cardportafolio__fila{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+div.cardportafolio__fila img{
+    width: 100%;
+
+    filter: grayscale(40%);
+    -webkit-filter: grayscale(40%);
+    -moz-filter: grayscale(40%);
+}
+
+div.cardportafolio__fila img:hover{
+    filter: grayscale(0%);
+    transition: all 0.3s ease-in;
+}
+
+
+/*contenedor__servicess4contact*/
+section.contenedor__servicess4contact{
+    padding: 120px 0;
+    
+    background-image: url("../imagenes/room11.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+}
+
+
+
+section.contenedor__servicess4contact div.contenedor h3{
+    margin-bottom: 20px;
+    color: var(--colorEstilo18);
+    text-align: left;
+    
+}
+
+section.contenedor__servicess4contact div.contenedor
+div.fila__botones{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: flex-start;
+}
+
+
+/*******************************/
+/************ rooms ************/
+/*******************************/
+section.contenedor__roomss1{
+    padding: 120px 0;
+}
+
+section.contenedor__roomss1 div.contenedor h5{
+    text-align: center;
+}
+
+section.contenedor__roomss1 div.contenedor h3{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+div.roomss1__fila {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+
+div.card__cuerpo div.fila__botones a.redd
+{
+    color: var(--colorEstilo23);
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+}
+
+
+
+hr{
+    margin: 20px 0;
+    width: 100%;
+    border: 1px solid var(--colorEstilo17);
+}
+
+
+
+
+/*pie de card*/
+div.iconosrooms__fila {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+div.iconosrooms__fila div.iconosrooms1{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+div.iconosrooms__fila div.iconosrooms2 a{
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    color: var(--colorEstilo22);
+    font-weight: 500;
+    
+}
+
+
+
+/*******************************/
+/********* roomssingles ********/
+/*******************************/
+/*contenedor__roomssingles1*/
+section.contenedor__roomssingles1{
+    padding: 120px 0;
+}
+
+section.contenedor__roomssingles1 div.contenedor h5{
+    text-align: center;
+}
+
+section.contenedor__roomssingles1 div.contenedor h3{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+section.contenedor__roomssingles1 div.contenedor div.roomssingles1__fila{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.roomssingles1__lado2 img{
+    width: 100%;
+}
+
+
+div.roomssingles1__fila div.roomssingles1__lado1{
+    flex: 50%;
+}
+
+div.roomssingles1__fila div.roomssingles1__lado2{
+    flex: 50%;
+}
+
+div.roomssingles1__fila div.roomssingles1__lado1 h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+div.roomssingles1__fila div.roomssingles1__lado1 h4{
+    text-align: center;
+    font-weight: 300;
+    color: var(--colorEstilo12);
+    font-size: 1rem;
+    font-style: italic;
+
+    margin: 10px 0 20px 0;
+}
+
+
+div.roomssingles1__fila div.roomssingles1__lado1 h5{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--colorEstilo22);
+}
+
+div.roomssingles1__fila div.roomssingles1__lado1 p{
+    text-align: center;
+}
+
+div.roomssingles1__fila div.roomssingles1__lado1 div.fila__botones{
+    text-align: center;
+}
+
+div.roomssingles1__fila div.roomssingles1__lado1 div.fila__botones a{
+    margin: 20px 0 30px 0;
+    
+}
+
+div.roomssingles1__fila div.roomssingles1__lado1 div.roomsincluye{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+div.roomssingles1__fila div.roomssingles1__lado1 div.roomsincluye a{
+    color: var(--colorEstilo12);
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    
+}
+
+
+
+div.roomssingles1__fila div.roomssingles1__lado2 img{
+    border-radius: 10px;
+    padding: 10px 0 10px 10px;
+    
+    filter: brightness(80%);
+    
+}
+
+div.roomssingles1__fila div.roomssingles1__lado2 img:hover{
+    filter: brightness(100%);
+    transition: all 0.3s ease-in;
+}
+
+    
+div.roomssingles1__fila div.roomssingles1__lado1 a.returnrooms{
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+    
+    text-transform: capitalize;
+    margin-top: 30px;
+    color: var(--colorEstilo23);
+}
+
+
+/*contenedor__roomssingles2*/
+section.contenedor__roomssingles2{
+    padding: 120px 0;
+    background-color: var(--colorEstilo24);
+}
+
+section.contenedor__roomssingles2 div.contenedor h3{
+    text-align: center;
+}
+
+section.contenedor__roomssingles2 div.contenedor p{
+    text-align: center;
+    margin-bottom: 40px;
+
+    border: 1px solid var(--colorEstilo15);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+
+div.roomssingle__fila{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+div.roomssingle__fila div.roomssingle img{
+    border-radius: 10px;
+    filter: brightness(80%);
+}
+
+div.roomssingle__fila div.roomssingle img:hover{
+    filter: brightness(100%);
+    transition: all 0.3s ease-in;
+}
+
+
+/*contenedor__roomssingles3*/
+section.contenedor__roomssingles3{
+    padding: 120px 0;
+}
+
+section.contenedor__roomssingles3 div.contenedor div.roomssingles3{
+    display: flex;
+    flex-direction: row;    
+}
+
+div.roomssingles3 div.roomssingles3__lado1{
+    flex: 50%;
+}
+
+div.roomssingles3 div.roomssingles3__lado1 h4{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div.roomssingles3 div.roomssingles3__lado1 ul li{
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-left: 20px;
+    margin-bottom: 10px;
+
+    color: var(--colorEstilo12);
+}
+
+
+div.roomssingles3 div.roomssingles3__lado2{
+    flex: 50%;
+    text-align: center;
+}
+
+
+div.roomssingles3 div.roomssingles3__lado2 img{
+    border-radius: 10px;
+    filter: brightness(80%);
+}
+
+div.roomssingles3 div.roomssingles3__lado2 img:hover{
+    filter: brightness(100%);
+    transition: all 0.3s ease-in;
+}
+
+
+
+/*******************************/
+/*********** contact ***********/
+/*******************************/
+/*contenedor__contacts1*/
+section.contenedor__contacts1{
+    padding: 120px 0;
+}
+
+section.contenedor__contacts1 div.contenedor h3{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section.contenedor__contacts1 div.contenedor div.contacts1__fila{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.contacts1__fila div.contacts1__lado1{
+    flex: 65%;
+}
+
+div.contacts1__fila div.contacts1__lado2{
+    flex: 35%;
+    padding: 0 0 0 10px;
+}
+
+
+
+
+/**/
+div.contacts1__lado2 div.contact__column {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;    
+}
+
+div.contact__column div.contactfila1{
+    text-align: center;
+
+    padding: 20px 30px 20px 30px;
+    border: 2px solid var(--colorEstilo22);
+
+}
+
+div.contact__column div.contactfila1 img{
+    width: 50px;
+}
+
+div.contact__column div.contactfila1 h4{
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+
+div.contact__column div.contactfila1 p{
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--colorEstilo12);
+}
+
+div.contact__column div.contactfila1  h5{
+    text-transform: uppercase;
+    color: var(--colorEstilo10);
+    margin: 20px 0 10px 0;    
+}
+
+div.contact__column div.contactfila1 div.redsocialcontacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+div.contact__column div.contactfila1 div.redsocialcontacto img{
+    width: 20px;
+}
+
+
+div.contact__column div.contactfila2 div.reference__column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+div.reference__column div.reference {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+div.reference__column div.reference div.reference__lado1 img{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--colorEstilo23);
+}
+
+
+
+div.reference__column div.reference div.reference__lado2 h5{
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+div.reference__column div.reference div.reference__lado2 p{
+    font-size: 0.8rem;
+}
+
+div.reference__column div.reference div.reference__lado2 p a{
+    color: var(--colorEstilo12);
+
+}
+
+
+
+
+
+
+/*contenedor__contacts2*/
+section.contenedor__contacts2{
+    padding: 40px 0;
+}
+
+div.sectioncontact1__map iframe{
+    width: 100%;
+    filter: brightness(80%);
+}
+
+div.sectioncontact1__map iframe:hover{
+    filter: brightness(100%);
+    transition: all 0.3s ease-in;
+}
+
+
+
+
+/*contenedor__contactsection2*/
+/*form*/
+form{
+    text-align: center;
+    width: 80%;
+    margin: auto;   
+    padding: 70px 0; 
+}
+
+
+div.form__group{
+    margin-bottom: 1rem ;
+}
+
+.form__control{
+    width: 100%;
+    background-color: #F9F9F9;
+    color: var(--colorEstilo5);
+    font-weight: 300;    
+}
+
+form input,
+form textarea{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+
+form textarea{
+    line-height: 1.4rem;
+}
+
+
+form button{
+    width: 100%;
+    padding: 10px 0;
+    background-color: var(--colorEstilo22);
+    color: var(--colorEstilo18);
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+
+form button:hover{
+    background-color: var(--colorEstilo23);
+    color: var(--colorEstilo18);
+    transition: all 0.3s ease-in;
+}
+
+
+
+/*contenedor__reservations1*/
+section.contenedor__reservations1{
+    padding: 20px;
+    /*background-color: var(--colorEstilo11);*/
+    background-image: url("../imagenes/reservation.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+section.contenedor__reservations1 div.contenedor div.reservations1__fila{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+div.reservations1__fila div.reservations1__lado1{
+    flex: 50%;
+}
+
+
+div.reservations1__fila div.reservations1__lado2{
+    flex: 50%;
+}
+
+div.reservations1__lado1 div.reservation__grupo{
+    margin-top: 100px;    
+}
+
+
+div.reservations1__lado1 div.reservation__grupo h5{
+    text-transform: uppercase;    
+    color: var(--colorEstilo17);
+}
+
+div.reservations1__lado1 div.reservation__grupo h3{
+    margin: 40px 0;    
+    color: var(--colorEstilo17);
+}
+
+div.reservations1__lado1 div.reservation__grupo p{
+    color: var(--colorEstilo17);
+}
+
+
+div.reservations1__lado2 h4{
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--colorEstilo19);
+}
+
+
+div.reservations1__lado2 form{
+    padding: 50px;
+    border-radius: 10px;
+    background-color: var(--colorEstilo17)
+}
+
+
+
+
+
+
+
+
+
+
+
+/*contenedor__footer*/
+section.contenedor__footer{
+    padding: 100px 0;
+    background-color: var(--colorEstilo3);
+}
+
+
+
+div.footer__fila{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+div.footer__fila div.footer__section1 h4{
+    color: var(--colorEstilo16);
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+
+
+div.footer__fila div.footer__section1 p{
+    color: var(--colorEstilo15);
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+
+
+div.footer__fila div.footer__section1 ul.menu__opciones {
+    list-style-type: none;
+}
+
+div.footer__fila div.footer__section1 ul.menu__opciones li{
+    margin-bottom: 10px;
+}
+
+div.footer__fila div.footer__section1 ul.menu__opciones li a{
+    color: var(--colorEstilo13);
+    font-weight: 300;
+    font-size: 0.8rem;
+    
+}
+
+div.footer__fila div.footer__section1 ul.menu__opciones li a:hover
+{
+    color: var(--colorEstilo22);
+    transition: all 0.3s ease-in;
+}
+
+
+
+
+/*contenedor__footer*/
+footer.contenedor__footerautor{
+    background-color: var(--colorEstilo1);
+}
+
+div.pie__titulo p{
+    text-align: center;
+    font-size: 11px;
+    padding: 10px 0;
+    margin: 10px 0;
+
+    color: var(--colorEstilo18);
+}
+
+span.autor
+{
+    color: var(--colorEstilo18);
+    font-weight: 600;
+}
+
+
+span.donacion a
+{
+    color: var(--colorEstilo18);
+    font-weight: 600;
+}
+
+
+span.donacion a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+/***************************************/
+/***************************************/
+/***************************************/
+@media screen and (max-width: 1201px){
+    
+}
+
+@media screen and (max-width: 1147px){
+
+
+    /*contenedor__homes3services*/
+    section.contenedor__homes3services div.contenedor div.homes3services__grupo{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    
+    /*contenedor__homes6testimonial*/
+    section.contenedor__homes6testimonial div.contenedor div.testimonial__fila{
+        display: flex;
+        flex-direction: row;
+
+    }
+
+
+    
+    /*contenedor__abouts3team*/
+    section.contenedor__abouts3team div.contenedor div.cardteam__fila{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;        
+    }
+
+    div.cardteam__fila div.cardteam p{
+        text-align: center;
+    }
+
+
+
+    /*rooms*/
+    div.roomss1__fila{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    div.roomss1__fila div.card{
+        flex: 30%;
+    }
+
+
+    /*contenedor__roomssingles2*/
+    div.roomssingle__fila{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 10px;        
+    }
+
+    div.roomssingle__fila div.roomssingle img{
+        width: 100%;
+    }
+
+
+    /*contenedor__footer*/
+    section.contenedor__footer div.contenedor div.footer__fila{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    div.footer__fila div.footer__section1 h4{
+        margin-bottom: 10px;
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 769px){
+
+    header.contenedor__header nav.contenedor__superior div.contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav.contenedor__superior div.contenedor div.superior__menu ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+
+    /*contenedor__homes6testimonial*/
+    section.contenedor__homes6testimonial div.contenedor div.testimonial__fila{
+        display: flex;
+        flex-direction: column;        
+    }
+
+
+
+    /*contenedor__homes8partner*/
+    div.partner__fila{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+
+    /*contenedor__abouts3team*/
+    section.contenedor__abouts3team div.contenedor div.cardteam__fila{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;        
+    }
+
+    div.cardteam__fila div.cardteam p{
+        text-align: center;
+    }
+
+
+    /*contenedor__abouts5testimonial*/
+    section.contenedor__abouts5testimonial div.contenedor div.testimonial__fila{
+        display: flex;
+        flex-direction: column;                
+    }
+
+
+
+    /*rooms*/
+    div.roomss1__fila{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+
+    /*roomssingle*/    
+    /*contenedor__roomssingles2*/
+    section.contenedor__roomssingles2{
+        padding: 50px 0;
+    }
+
+    div.roomssingle__fila{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 10px;        
+    }
+
+    div.roomssingle__fila div.roomssingle img{
+        width: 100%;
+    }
+
+    /*contenedor__roomssingles2*/
+    section.contenedor__roomssingles3 div.contenedor div.roomssingles3
+    {
+        display: flex;
+        flex-direction: column;      
+    }
+
+    div.roomssingles3__lado2 img{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /*contenedor__footer*/
+    section.contenedor__footer div.contenedor div.footer__fila{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    div.footer__fila div.footer__section1 h4{
+        margin-bottom: 10px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 679px){
+    
+    header.contenedor__header nav.contenedor__superior div.contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav.contenedor__superior div.contenedor div.superior__menu ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+
+
+    /*index*/    
+    section.contenedor__homes2about div.contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.homes2about__lado1 div.grupo1 {
+        padding: 0 0 20px 0;
+    }
+
+
+    div.homes2about__lado2 img{
+        padding: 0;
+        border-radius: 10px;
+    }
+
+
+    section.contenedor__homes3services div.contenedor div.homes3services__grupo{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    div.homes5why__fila{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+    
+    section.contenedor__homes6testimonial div.contenedor div.testimonial__fila{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    
+    /*contenedor__homes8partner*/
+    div.partner__fila{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+
+
+
+    /*about*/    
+    section.contenedor__abouts1about div.contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.abouts1about__lado1 img{
+        padding: 0;
+        border-radius: 10px;
+    }
+
+
+    div.abouts1about__lado2 div.grupo1{
+        padding: 20px 0 0 0; 
+    }
+
+
+    /*contenedor__abouts2doing*/
+   section.contenedor__abouts2doing{
+        padding: 50px 0;
+    }
+
+   section.contenedor__abouts2doing div.contenedor div.cardabout__fila{
+        display: flex;
+        flex-direction: column;
+        flex: 100%;
+   }
+
+   div.cardabout__fila div.cardabout{
+        flex: 0 0 100%;
+        max-width: 100%;
+   }
+
+    /*contenedor__abouts4statistics*/
+    section.contenedor__abouts3team{
+        padding: 50px 0;
+    }
+
+    section.contenedor__abouts3team div.contenedor div.cardteam__fila{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;        
+    }
+
+    div.cardteam__fila div.cardteam p{
+        text-align: center;
+    }
+
+
+    /*contenedor__abouts4statistics*/
+    section.contenedor__abouts4statistics{
+        padding: 50px 0;
+    }
+
+    section.contenedor__abouts4statistics div.contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.abouts4statistics__lado1 div.abouts4statistics__grupo{
+        padding: 0 0 20px 0;
+    }
+
+
+    /*contenedor__abouts5testimonial*/
+    section.contenedor__abouts5testimonial{
+        padding: 50px 0;
+    }
+
+    section.contenedor__abouts5testimonial div.contenedor div.testimonial__fila{
+        display: flex;
+        flex-direction: column;                
+    }
+
+    /*services*/
+    section.contenedor__servicess2facilities div.contenedor div.servicess2facilities__lado1 {
+        padding-right: 0px;
+    }   
+
+    section.contenedor__servicess2facilities div.contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.servicess2facilities__lado1 div.servicess2facilities__grupo {
+        padding: 0;
+    }
+
+    div.servicess2facilities__lado1 div.servicess2facilities__grupo h3{
+        margin-bottom: 20px;
+    }
+
+
+    div.servicess2facilities__lado2 div.cardfacilities__fila {
+        padding: 40px 0;
+    }
+
+    section.contenedor__servicess2facilities div.contenedor div.servicess2facilities__lado2{
+        padding: 0;
+    }
+
+
+    /*rooms*/
+    /*contenedor__roomss1*/
+    section.contenedor__roomss1{
+        padding: 50px 0;
+    }
+
+
+    div.roomss1__fila{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /*roomssingle*/
+    section.contenedor__roomssingles1{
+        padding: 50px 0;
+    }
+
+    section.contenedor__roomssingles1 div.contenedor div.roomssingles1__fila{
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.roomssingles1__fila div.roomssingles1__lado1 h4{
+        margin-bottom: 10px;
+    }
+
+    div.roomssingles1__fila div.roomssingles1__lado2 img{
+        margin-top: 20px;
+        padding: 0;
+    }
+
+
+    /*contenedor__roomssingles2*/
+    section.contenedor__roomssingles2{
+        padding: 50px 0;
+    }
+
+    div.roomssingle__fila{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 10px;        
+    }
+
+    div.roomssingle__fila div.roomssingle img{
+        width: 100%;
+    }
+
+    
+    /*contenedor__roomssingles2*/
+    section.contenedor__roomssingles3{
+        padding: 50px 0;
+    }
+
+    section.contenedor__roomssingles3 div.contenedor div.roomssingles3
+    {
+        display: flex;
+        flex-direction: column;      
+    }
+
+    div.roomssingles3__lado2 img{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+
+    /*reservation*/    
+    section.contenedor__reservations1 div.contenedor div.reservations1__fila{
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.reservations1__lado1 div.reservation__grupo{
+        margin-top: 0;
+    }
+
+    div.reservations1__lado1 div.reservation__grupo h3{
+        font-size: 1.6rem;
+    }
+
+    div.reservations1__lado2 form{
+        padding: 20px;
+        width: 100%;
+    }
+
+    /*contenedor__footer*/
+    section.contenedor__footer{
+        padding: 50px 0;
+    }
+
+    section.contenedor__footer div.contenedor div.footer__fila{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    div.footer__fila div.footer__section1 h4{
+        margin-bottom: 10px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 481px){
+    
+    header.contenedor__header nav.contenedor__superior div.contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav.contenedor__superior div.contenedor div.superior__menu ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    /*contenedor__homes1banner*/
+    section.contenedor__homes1banner{
+        padding: 100px 0;
+        height: 70vh;
+    }
+
+    /*contenedor__homes2about*/
+    section.contenedor__homes2about{
+        padding: 50px 0;
+    }
+
+    section.contenedor__homes2about div.contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.homes2about__lado1 div.grupo1 {
+        padding: 0 0 20px 0;
+    }
+
+    div.homes2about__lado2 img{
+        padding: 0;
+        border-radius: 10px;
+    }
+
+
+    /*contenedor__homes3services*/
+    section.contenedor__homes3services{
+        padding: 50px 0;
+    }
+
+    section.contenedor__homes3services div.contenedor div.homes3services__grupo{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    /*contenedor__homes4reservation*/
+    section.contenedor__homes4reservation{
+        padding: 50px 0;
+    }
+
+    div.homes5why__fila{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+
+
+    /*contenedor__homes5why*/
+    section.contenedor__homes5why{
+        padding: 50px 0;
+    }
+    
+
+    /*contenedor__homes6testimonial*/
+    section.contenedor__homes6testimonial{
+        padding: 50px 0;
+    }
+
+    section.contenedor__homes6testimonial div.contenedor div.testimonial__fila{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    /*contenedor__homes7contact*/
+    section.contenedor__homes7contact{
+        padding: 50px 0;
+    }
+
+    /*contenedor__homes8partner*/
+    section.contenedor__homes8partner{
+        padding: 50px 0;
+    }
+
+    div.partner__fila{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+
+    
+    /*contenedor__footer*/
+    section.contenedor__footer{
+        padding: 50px 0;
+    }
+
+    section.contenedor__footer div.contenedor div.footer__fila{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    div.footer__fila div.footer__section1 h4{
+        margin-bottom: 10px;
+    }
+
+
+    /*about*/
+    
+    /*contenedor__abouts1about*/
+    section.contenedor__abouts1about{
+        padding: 50px 0;
+    }
+
+    section.contenedor__abouts1about div.contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.abouts1about__lado1 img{
+        padding: 0;
+        border-radius: 10px;
+    }
+
+
+    div.abouts1about__lado2 div.grupo1{
+        padding: 20px 0 0 0; 
+    }
+
+
+
+    /*contenedor__abouts2doing*/
+   section.contenedor__abouts2doing{
+        padding: 50px 0;
+    }
+
+   section.contenedor__abouts2doing div.contenedor div.cardabout__fila{
+        display: flex;
+        flex-direction: column;
+        flex: 100%;
+   }
+
+   div.cardabout__fila div.cardabout{
+        flex: 0 0 100%;
+        max-width: 100%;
+   }
+
+    /*contenedor__abouts4statistics*/
+    section.contenedor__abouts3team{
+        padding: 50px 0;
+    }
+
+    section.contenedor__abouts3team div.contenedor div.cardteam__fila{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;        
+    }
+
+    div.cardteam__fila div.cardteam p{
+        text-align: center;
+    }
+
+
+    /*contenedor__abouts4statistics*/
+    section.contenedor__abouts4statistics{
+        padding: 50px 0;
+    }
+
+    section.contenedor__abouts4statistics div.contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.abouts4statistics__lado1 div.abouts4statistics__grupo{
+        padding: 0 0 20px 0;
+    }
+
+
+    /*contenedor__abouts5testimonial*/
+    section.contenedor__abouts5testimonial{
+        padding: 50px 0;
+    }
+
+    section.contenedor__abouts5testimonial div.contenedor div.testimonial__fila{
+        display: flex;
+        flex-direction: column;                
+    }
+
+
+    /*contenedor__abouts6reservation*/
+    section.contenedor__abouts6reservation{
+        padding: 50px 0;
+    }
+
+
+
+    /*services*/
+    section.contenedor__servicess1services{
+        padding: 50px 0;
+    }
+
+    /*contenedor__servicess2facilities*/
+    section.contenedor__servicess2facilities{
+        padding: 50px 0;
+    }
+
+
+    section.contenedor__servicess2facilities div.contenedor div.servicess2facilities__lado1 {
+        padding-right: 0px;
+    }   
+
+    section.contenedor__servicess2facilities div.contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.servicess2facilities__lado1 div.servicess2facilities__grupo {
+        padding: 0;
+    }
+
+    div.servicess2facilities__lado1 div.servicess2facilities__grupo h3{
+        margin-bottom: 20px;
+    }
+
+
+    div.servicess2facilities__lado2 div.cardfacilities__fila {
+        padding: 40px 0;
+    }
+
+    section.contenedor__servicess2facilities div.contenedor div.servicess2facilities__lado2{
+        padding: 0;
+    }
+
+
+    /*contenedor__servicess3portafolio*/
+    section.contenedor__servicess3portafolio{
+        padding: 50px 0;
+    }
+
+    /*contenedor__servicess4contact*/
+    section.contenedor__servicess4contact{
+        padding: 50px 0;
+    }
+
+
+    /*rooms*/
+    /*contenedor__roomss1*/
+    section.contenedor__roomss1{
+        padding: 50px 0;
+    }
+
+
+    div.roomss1__fila{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /*roomssingle*/
+    section.contenedor__roomssingles1{
+        padding: 50px 0;
+    }
+
+    section.contenedor__roomssingles1 div.contenedor div.roomssingles1__fila{
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.roomssingles1__fila div.roomssingles1__lado1 h4{
+        margin-bottom: 10px;
+    }
+
+    div.roomssingles1__fila div.roomssingles1__lado2 img{
+        margin-top: 20px;
+        padding: 0;
+    }
+
+
+    /*contenedor__roomssingles2*/
+    section.contenedor__roomssingles2{
+        padding: 50px 0;
+    }
+
+    div.roomssingle__fila{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 10px;        
+    }
+
+    div.roomssingle__fila div.roomssingle img{
+        width: 100%;
+    }
+
+    
+    /*contenedor__roomssingles2*/
+    section.contenedor__roomssingles3{
+        padding: 50px 0;
+    }
+
+    section.contenedor__roomssingles3 div.contenedor div.roomssingles3
+    {
+        display: flex;
+        flex-direction: column;      
+    }
+
+    div.roomssingles3__lado2 img{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+
+    /*contact*/
+    /*contenedor__contacts1*/
+    section.contenedor__contacts1{
+        padding: 50px 0;
+    }
+
+    section.contenedor__contacts1 div.contenedor div.contacts1__fila{
+        display: flex;
+        flex-direction: column;   
+    }
+
+    div.contacts1__fila div.contacts1__lado1 form{
+        padding-top: 0;
+    }
+
+
+    div.contacts1__fila div.contacts1__lado2{
+        padding: 0;
+
+    }
+
+    
+    /*reservation*/
+    section.contenedor__reservations1{
+        padding: 50px 0;
+    }
+
+    section.contenedor__reservations1 div.contenedor div.reservations1__fila{
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.reservations1__lado1 div.reservation__grupo{
+        margin-top: 0;
+    }
+
+    div.reservations1__lado1 div.reservation__grupo h3{
+        font-size: 1.6rem;
+    }
+
+    div.reservations1__lado2 form{
+        padding: 20px;
+        width: 100%;
+    }
+
+
+
+
+}
+
+
+@media screen and (max-width: 320px){
+
+    /*index*/    
+    header.contenedor__header nav.contenedor__superior div.contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    nav.contenedor__superior div.contenedor div.superior__menu ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+
+    }
+
+
+    nav.contenedor__superior div.contenedor div.superior__menu ul li{
+        text-align: center;        
+    }
+    nav.contenedor__superior div.contenedor div.superior__menu ul li a{
+        font-size: 0.7rem;
+    }
+
+    /*contenedor__homes1banner*/
+    section.contenedor__homes1banner{
+        padding: 50px 0;
+        height: 100%;
+    }
+
+    div.contenedor div.homes1banner h2{
+        font-size: 1.6rem;
+    }
+
+
+    /*contenedor__homes2about*/
+    section.contenedor__homes2about{
+        padding: 50px 0;
+        height: 100%;
+    }
+
+    section.contenedor__homes2about div.contenedor{
+        display: flexbox;
+        flex-direction: column;
+    }
+
+    div.homes2about__lado1 div.grupo1{
+        padding: 0 0 30px 0;
+    }
+
+    div.homes2about__lado1 div.grupo1 h3{
+        font-size: 1.5rem;
+    }
+
+    div.homes2about__lado1 div.grupo1 p{
+        font-size: 0.8rem;
+    }
+
+    div.homes2about__lado2 img{
+        padding: 0;
+        border-radius: 10px;
+    }
+    
+
+    /*contenedor__homes3services*/
+    section.contenedor__homes3services{
+        padding: 50px 0;
+    }
+
+    section.contenedor__homes3services div.contenedor h3{
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    div.homes3services__grupo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    figcaption div h4.figcaption{
+        font-size: 0.8rem;
+    }
+
+    div.card__cuerpo ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    div.card__cuerpo ul li{
+        font-size: 0.8rem;
+    }
+    div.card__cuerpo p{
+        font-size: 0.8rem;
+    }
+
+
+    /*contenedor__homes4reservation*/
+    section.contenedor__homes4reservation{
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    div.homes4reservation__grupo{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    div.homes4reservation__lado1 h3{
+        font-size: 1.5rem;
+    }
+
+    /*contenedor__homes5why*/
+    section.contenedor__homes5why{
+        padding: 50px 0;
+    }
+
+    section.contenedor__homes5why div.contenedor h3{
+        font-size: 1.5rem;
+    }
+
+    section.contenedor__homes5why div.contenedor p{
+        font-size: 0.8rem;
+    }
+
+    div.homes5why__fila{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;        
+    }   
+
+    div.homes5why__fila div.homes5why{
+        text-align: left;
+    }
+
+    div.homes5why__fila div.homes5why img{
+        width: 35px;
+    }
+
+    div.homes5why__fila div.homes5why p{
+        font-size: 0.8rem;
+        text-align: left;
+    }
+
+    /*contenedor__homes6testimonial*/
+    section.contenedor__homes6testimonial{
+        padding: 50px 0;
+    }
+
+    section.contenedor__homes6testimonial div.contenedor h3{
+        font-size: 1.5rem;
+    }
+        
+    section.contenedor__homes6testimonial div.contenedor p{
+        font-size: 0.8rem;
+    }
+
+    div.testimonial__fila{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    div.testimonial__fila div.testimonial{
+        padding: 0;
+    }
+
+    div.testimonial__fila div.testimonial img{
+        width: 60px;
+    }
+
+    /*contenedor__homes7contact*/
+    section.contenedor__homes7contact{
+        padding: 50px 0;
+    }
+
+    section.contenedor__homes7contact div.contenedor h3{
+        font-size: 1.6rem;
+    }
+
+    section.contenedor__homes7contact div.contenedor div.fila__botones{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    /*contenedor__homes8partner*/
+    section.contenedor__homes8partner{
+        padding: 50px 0;
+    }
+
+    section.contenedor__homes8partner div.contenedor div.partner__fila{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+    /*about*/
+    #ocultar{
+        display: none;
+    }
+
+    section.contenedor__abouts1about{
+        padding: 50px 0;
+    }
+
+    section.contenedor__abouts1about div.contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.abouts1about__lado1 img{
+        padding: 0;
+        border-radius: 10px;
+    }
+
+    div.abouts1about__lado2 div.grupo1{
+        padding: 20px 0 0 0;
+    }
+
+    div.abouts1about__lado2 div.grupo1 h3{
+        font-size: 1.5rem;
+    }
+
+    div.abouts1about__lado2 div.grupo1 p{
+        font-size: 0.8rem;
+    }
+
+    div.abouts1about__lado2 div.grupo1 div.experience ul li{
+        font-size: 0.8rem;
+    }
+
+
+    /*contenedor__abouts2doing*/
+    section.contenedor__abouts2doing{
+        padding: 50px 0;
+    }
+
+    section.contenedor__abouts2doing div.contenedor h3{
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+
+    div.cardabout__fila{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    div.cardabout__fila div.cardabout{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    div.cardabout__fila div.cardabout p{
+        font-size: 0.8rem;
+    }
+
+    div.cardabout__fila div.cardabout img{
+        width: 45px;
+    }
+
+
+
+    /*contenedor__abouts3team*/
+    section.contenedor__abouts3team{
+        padding: 50px 0;
+    }
+    
+    section.contenedor__abouts3team div.contenedor h3{
+        font-size: 1.5rem;
+        margin-bottom: 20px;  
+    }
+
+    div.cardteam__fila{
+        display: flex;
+        flex-direction: column;        
+    }
+
+    div.cardteam__fila div.cardteam img{
+        width: 100%;
+    }
+
+    div.cardteam__fila div.cardteam p{
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+
+    /*contenedor__abouts4statistics*/
+    section.contenedor__abouts4statistics{
+        padding: 50px 0;
+    }
+
+    section.contenedor__abouts4statistics div.contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    section.contenedor__abouts4statistics div.contenedor div.abouts4statistics__lado1 {
+        padding: 0px;
+    }
+
+    div.abouts4statistics__lado1 div.abouts4statistics__grupo{
+        padding: 0 0 20px 0;
+    }
+
+    div.abouts4statistics__lado1 div.abouts4statistics__grupo h3{
+        font-size: 1.5rem;
+    }
+
+    div.abouts4statistics__lado1 div.abouts4statistics__grupo p{
+        font-size: 0.8rem;
+    }
+    
+    section.contenedor__abouts4statistics div.contenedor div.abouts4statistics__lado2 {
+        padding: 0px;
+    }
+
+    div.abouts4statistics__lado2 div.cardstatistics__fila{
+        padding: 0;
+    }
+
+    div.cardstatistics__fila div.cardstatistics img{
+        width: 45px;
+    }
+
+    div.cardstatistics__fila div.cardstatistics p{
+        font-size: 0.8rem;
+    }
+
+
+
+    /*contenedor__abouts5testimonial*/
+    section.contenedor__abouts5testimonial{
+        padding: 50px 0;
+    }
+
+    section.contenedor__abouts5testimonial div.contenedor h3{
+        font-size: 1.5rem;
+    } 
+
+    section.contenedor__abouts5testimonial div.contenedor p{
+        font-size: 0.8rem;
+    }
+
+
+    /*contenedor__abouts6reservation*/
+    section.contenedor__abouts6reservation{
+        padding: 50px 0;
+    }
+
+
+    div.abouts6reservation__lado1 h3{
+        font-size: 1.6rem;
+    }
+
+
+    section.contenedor__abouts6reservation div.contenedor div.fila__botones {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+
+    /*contenedor__servicess1services*/
+    section.contenedor__servicess1services{
+        padding: 50px 0;
+    }
+
+    section.contenedor__servicess1services div.contenedor h3{
+        font-size: 1.5rem;    
+        margin-bottom: 20px;
+    }
+
+    div.cardservices__fila div.cardservices p{
+        font-size: 0.8rem;
+    }
+
+    div.cardservices__fila div.cardservices img{
+        width: 45px;
+    }
+
+    /*contenedor__servicess2facilities*/
+    section.contenedor__servicess2facilities{
+        padding: 50px 0;
+    }
+
+    section.contenedor__servicess2facilities div.contenedor{
+        display: flex;
+        flex-direction: column;        
+    }
+
+    div.servicess2facilities__lado1 div.servicess2facilities__grupo{
+        padding:0;
+    }
+
+    div.servicess2facilities__lado1 div.servicess2facilities__grupo h3{
+        font-size: 1.5rem;    
+        margin-bottom: 20px;
+    }
+
+    div.servicess2facilities__lado1 div.servicess2facilities__grupo img{
+        width: 100%;
+    }
+
+    section.contenedor__servicess2facilities div.contenedor div.servicess2facilities__lado1 {
+    padding-right: 0px;
+    }
+
+    section.contenedor__servicess2facilities div.contenedor div.servicess2facilities__lado2{
+        padding-left: 0px;
+    }
+
+    div.servicess2facilities__lado2 div.cardfacilities__fila{
+        padding: 20px 0;
+    }
+
+
+    /*contenedor__servicess3portafolio*/
+    section.contenedor__servicess3portafolio{
+        padding: 50px 0;
+    }
+
+    section.contenedor__servicess3portafolio div.contenedor h3{
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    div.cardportafolio__fila {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /*contenedor__servicess4contact*/
+    section.contenedor__servicess4contact{
+        padding: 50px 0;
+    }
+
+    section.contenedor__servicess4contact div.contenedor h3{
+        font-size: 1.6rem;
+    }
+
+    section.contenedor__servicess4contact div.contenedor div.fila__botones{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+
+    /*rooms*/
+    section.contenedor__roomss1{
+        padding: 50px 0;        
+    }
+
+    section.contenedor__roomss1 div.contenedor h3{
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+
+    section.contenedor__roomss1 div.contenedor div.roomss1__fila{
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.iconosrooms__fila div.iconosrooms1 {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+        flex-wrap: wrap;
+    }
+
+
+
+    /*roomssingle*/
+    section.contenedor__roomssingles1{
+        padding: 50px 0;
+    }
+
+    section.contenedor__roomssingles1 div.contenedor h3{
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    section.contenedor__roomssingles1 div.contenedor  div.roomssingles1__fila{
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.roomssingles1__fila div.roomssingles1__lado1 h3{
+        font-size: 1.2rem;
+    }
+
+    div.roomssingles1__fila div.roomssingles1__lado1 h4{
+        margin-bottom: 10px;
+    }
+
+
+    div.roomsincluye{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    div.roomssingles1__fila div.roomssingles1__lado2 img{
+        padding: 0;       
+        margin-top: 20px; 
+    }
+
+
+    /*contenedor__roomssingles2*/
+    section.contenedor__roomssingles2{
+        padding: 50px 0;
+    }
+
+    section.contenedor__roomssingles2 div.contenedor h3{
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+
+    section.contenedor__roomssingles2 div.contenedor p{
+        font-size: 0.8rem;
+    }
+
+
+    div.roomssingle__fila{
+        display: flex;
+        flex-direction: column;        
+        gap: 10px;
+    }
+
+    div.roomssingle__fila div.roomssingle img{
+        width: 100%;
+    }
+
+
+
+    /*contenedor__roomssingles3*/
+    section.contenedor__roomssingles3{
+
+        padding: 50px 0;
+    }
+
+    section.contenedor__roomssingles3 div.contenedor div.roomssingles3{
+        display: flex;
+        flex-direction: column;     
+    }
+
+
+    div.roomssingles3__lado2 img{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+    /*contact*/
+    section.contenedor__contacts1{
+        padding: 50px 0;
+    }
+
+    section.contenedor__contacts1 div.contenedor h3{
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    section.contenedor__contacts1 div.contenedor div.contacts1__fila{
+        display: flex;
+        flex-direction: column;    
+    }
+
+    div.contacts1__fila div.contacts1__lado1 form{
+        padding-top: 0px;
+        width: 100%;        
+    }
+
+    div.contacts1__fila div.contacts1__lado2{
+        padding: 0;
+    }
+
+
+    /*reservation*/
+    section.contenedor__reservations1{
+        padding: 50px 0;
+    }
+
+    section.contenedor__reservations1 div.contenedor div.reservations1__fila{
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.reservations1__lado1 div.reservation__grupo{
+        margin-top: 0;
+    }
+
+    div.reservations1__lado1 div.reservation__grupo h3{
+        font-size: 1.6rem;
+    }
+
+    div.reservations1__lado2 form{
+        padding: 20px;
+        width: 100%;
+    }
+
+
+
+    /*contenedor__footer*/
+    section.contenedor__footer{
+        padding: 50px 0;
+    }
+
+    section.contenedor__footer div.contenedor div.footer__fila{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    div.footer__fila div.footer__section1 h4{
+        margin-bottom: 10px;
+    }
+
+
+
+}
+
+
+

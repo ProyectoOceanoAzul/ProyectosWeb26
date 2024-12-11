@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<!-- <!DOCTYPE html>    indicamos al navegaor q estamos trabajando con la ultima version de html5  -->
+
+<html lang="es">
+
+<!-- head   : van los metadatos informaocion q indiucamos al navegador para q identifique de forma correcta la pagian web -->
+
+<head>
+
+    <!-- html lang="es">    indica en q idioma esta escrinto el docuimento html -->
+
+    <!-- indicamos al navegador q tenbemos vocales con tilde -->
+    <!-- Lea codigo ASCII-->
+    <meta charset="UTF-8">
+
+    <!-- Para q el visitio web sea adaptable a cualquier dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- contniendio de la pagina web -->
+    <meta name="description" content="Esta es mi primera pagina web">
+
+    <!-- para el motor de busquedad busque mi pagina / escanear-->
+    <meta name="robots" content="index, follow">
+
+    <!-- palabras claves para encontrar mi pagina web -->
+    <meta name="keywords" content="pagina, website, sitio web, mi primera">
+
+    <!-- Nombre de nuestra página -->
+    <meta name="copyright" content="Copyright © MiWeb.com">
+
+    <!-- Indicarle al autor de quien ha creado la pagina web -->
+    <meta name="Author" Lang="es" content="Gerson N">
+
+
+
+    <!-- para q la pagina se recargue cada 10 segundos de acuerdo al contenido 
+    <meta http-equiv="refresh" content="10" />
+    -->
+
+
+    <!-- 
+    observacion : para q despues de 5 segundos se recargue otra pogina web 
+
+    <meta http-equiv="refresh" content="5; url=https://www.youtube.com/@geronelo1435" />    
+    -->
+
+
+    <!-- normalize : agregamos un archivo .css -->
+    <link rel="stylesheet" href="./css/normalize.css">
+
+
+    <!-- estilos css : agregamos un archivo .css -->
+    <link rel="stylesheet" href="./css/estilos.css">
+
+
+
+
+    <!-- icono en la pagina web : para importar iconos -->
+    <link rel="shortcut icon" href="./imagenes/icon.png" type="image/x-icon">
+
+    <!-- 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    -->
+
+    <!-- enlace para icnos de fontawesome -->
+    <script src="https://kit.fontawesome.com/2ad58faca7.js" crossorigin="anonymous"></script>
+
+
+
+    <!-- 
+    colocar un nombre referido a lo q contiene el documento html  y se mostrara en una pestaña -->
+    <title>Maquetacion</title>
+
+</head>
+
+
+<body>
+
+    <!-- contenedor header -->
+    <header class="contenedor__header" id="Home">
+
+        <!-- contenedor__superior -->
+        <nav class="contenedor__superior">
+
+            <div class="contenedor">
+
+                <!-- logo -->
+                <div class="superior__logo">
+                    <img src="./imagenes/hotel.svg" alt="">
+                    <h1 class="logo__titulo">Hotel Schröder</h1>
+                </div>
+
+                <!-- menu -->
+                <div class="superior__menu" id="ocultar">
+                    <ul class="menu__opciones">
+                        <li><a href="index.html">Heim</a></li>
+                        <li><a href="about.html">über Uns</a></li>
+                        <li><a href="services.html">Dienstleistungen</a></li>
+
+                        <li>
+                            <a href="rooms.html">zimmer</a>
+                        </li>
+                        <li><a href="roomssingle.html">zimmer einzel</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                        <li><a href="reservation.html" style="font-weight: bolder; color: black;">Jetzt buchen</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <br>
+
+    <!-- contenedor__banner -->
+    <section class="contenedor__banner">
+        <div class="contenedor">
+
+
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <span class="span1">Heim</span> »
+                    </a><span class="span2">reservation page</span>
+                </li>
+            </ul>
+
+
+        </div>
+    </section>
+
+
+
+    <!-- contenedor__contacts1 -->
+    <section class="contenedor__reservations1">
+        <div class="contenedor">
+
+
+            <div class="reservations1__fila">
+                <div class="reservations1__lado1">
+
+                    <div class="reservation__grupo">
+                        <h5>your reservation</h5>
+
+                        <h3>
+                            Select the Room, check for availability and book it
+                        </h3>
+
+                        <p>
+                            Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur
+                            adipisicing elit Ea consequuntur
+                            illum.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="reservations1__lado2">
+
+                    <h4>Book Now</h4>
+
+                    <form action="#">
+                        <div class="form__group">
+                            <input type="text" name="nombre" id="nombre" placeholder="Name*" required="Yes"
+                                class="form__control">
+                        </div>
+
+
+                        <div class="form__group">
+                            <input type="email" name="email" id="email" placeholder="Email*" required="Yes"
+                                class="form__control">
+                        </div>
+
+
+                        <div class="form__group">
+                            <textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Nachricht*"
+                                required="Yes" class="form__control"></textarea>
+                        </div>
+
+                        <button>Nachricht Senden</button>
+
+                    </form>
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <!-- contenedor__footer -->
+    <section class="contenedor__footer">
+        <div class="contenedor">
+            <div class="footer__fila">
+                <div class="footer__section1">
+                    <h4>Hotel Schröder</h4>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, non!
+                    </p>
+
+                    <div class="redsocial">
+                        <a href="#"><img src="./imagenes/facebook.svg" alt="facebook1" title="facebook1"></a>
+
+                        <a href="#"><img src="./imagenes/twitter.svg" alt="twitter2" title="twitter2"></a>
+
+                        <a href="#"><img src="./imagenes/instagram.svg" alt="instagram2" title="instagram2"></a>
+
+                    </div>
+                </div>
+
+
+                <div class="footer__section1">
+                    <h4>Link</h4>
+
+                    <ul class="menu__opciones">
+                        <li><a href="index.html">» Heim</a></li>
+                        <li><a href="about.html">» über Uns</a></li>
+                        <li><a href="services.html">» Dienstleistungen</a></li>
+                        <li><a href="rooms.html">» zimmer</a></li>
+                        <li><a href="roomssingle.html">» zimmer einzel</a></li>
+                        <li><a href="contact.html">» Kontakt</a></li>
+                        <li><a href="reservation.html">» Jetzt buchen</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="footer__section1">
+                    <h4>Dienstleistungen</h4>
+
+                    <ul class="menu__opciones">
+                        <li><a href="services.html">» Dienstleistungen 1</a></li>
+                        <li><a href="services.html">» Dienstleistungen 2</a></li>
+                        <li><a href="services.html">» Dienstleistungen 3</a></li>
+                        <li><a href="services.html">» Dienstleistungen 4</a></li>
+                        <li><a href="services.html">» Dienstleistungen 5</a></li>
+                        <li><a href="services.html">» Dienstleistungen 6</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="footer__section1">
+                    <h4>Kontakt</h4>
+
+                    <ul class="menu__opciones">
+                        <li><a href="services.html">» +44 123 984 439</a></li>
+                        <li><a href="services.html">» mail@example.com</a></li>
+                        <li><a href="services.html">» London, 235 Terry, 10001</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- pie -->
+    <footer class="contenedor__footerautor">
+        <div class="contenedor">
+
+            <div class="pie__titulo">
+                <p>
+                    &copy;2024, Derechos Reservados, Diseñado por
+                    <span class="autor">93R50N</span>
+
+                    <br>
+                    Cada aporte, por más pequeño que sea, puede marcar la diferencia en la vida de una persona.
+                    Donación:
+                    <span class="donacion">
+                        <a href="https://wa.link/5nawh3"> Plin o Yape</a>
+                    </span>
+                </p>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
